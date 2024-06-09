@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #2D3142;
+    background-color: #fff;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+/* Common codes start here */
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.all-btn{
+    background-color: #F44335;
+    color: #fff;
+    font-size: 18px;
+}
+.all-btn:hover{
+    background-color: transparent;
+    color: #2D3142;
+    border: 1px solid #2D3142;
+}
+.btn-small{
+    padding: 10px 16px;
+}
+.btn-large{
+    padding: 16px 36px;
+}
+.btn-secondary{
+    border: 1px solid rgba(32, 72, 79, 0.1);
+    background: #fff;
+    color: #2D3142;
+    padding: 16px 36px;
+    font-size: 18px;
+}
+/* Common codes end here */
+
+/* Nabvbar codes start here */
+.navbar-nav .nav-item .nav-link{
+    color: #072125;
+    padding: 0 16px;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #F44335;
+}
+/* Navbar codes end here */
+
+/* Hero codes start here */
+.hero{
+    padding: 117px 87px;
+    background-color: #FAFAFA;
+
+    .hero-caption{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        span{
+            color: #F44335;
+        }
+    }
+    h1{
+        font-size: 64px;
+        font-weight: 700;
+        color: #072125;
+        line-height: 120%;
+        margin-bottom: 25px;
+
+        span{
+            color: #F44335;
+        }
+    }
+    p{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .hero-image-content{
+        margin-top: -60px;
+    }
+}
+/* Hero codes end here */
+
+/* Partners codes start here */
+.partners{
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .partners-logos{
+        gap: 100px;
+    }
+}
+/* Partners codes end here */
+
+/* Percentige codes start here */
+.percentige{
+    padding: 85px 77px;
+    background-color: #FAFAFA;
+
+    .percenting-section-top{
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+    .devider{
+        border: 2px solid #072125;
+    }
+    .percentige-cards-block{
+        h3{
+            font-size: 64px;
+            line-height: 120%;
+            font-weight: 700;
+        }
+        span{
+            color: #F44335;
+        }
+        p{
+            margin-top: 10px;
+            color: #072125;
+        }
+    }
+}
+/* Percentige codes end here */
+
+/* Timeline codes start here */
+.timeline{
+    position: relative;
+
+    .timeline-decore-image{
+        position: absolute;
+        left: 50%;
+        top: 245px;
+        transform: translateX(-50%);
+        height: 2900px;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .timeline-section-top{
+        padding: 106px 0;
+        color: #2D3142;
+        background-color: #fff;
+        background: url(../images/timeline-top-decore.png) no-repeat right, url(../images/timeline-top-decore.png) no-repeat left;
+
+        p{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 64px;
+            line-height: 120%;
+            font-weight: 700;
+        }
+    }
+    .timeline-section-content{
+        background-color: #FAFAFA;
+
+        .timeline-text-block{
+            height: 450px;
+
+            h3{
+                font-size: 32px;
+                font-weight: 800;
+                line-height: 130%;
+                margin-bottom: 15px;
+            }
+            p{
+                color: #787A80;
+                margin-bottom: 25px;
+            }
+        }
+        .timeline-text-block-last{
+            height: 250px;
+        }
+    }
+}
+
+/* quotes section codes start here */
+.quotes{
+    padding: 80px 0;
+    background-color: #FAFAFA;
+    color: #072125;
+    background: url(../images/quote-bg-decore.png) no-repeat right bottom;
+
+    h2{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .card{
+        padding: 33px 36px;
+        .card-body{
+            img{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 24px;
+                line-height: 150%;
+            }
+        }
+        .quote-card-bottom{
+            margin-top: 25px;
+            h6{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            span{
+                font-size: 14px;
+                color: #20484F;
+            }
+        }
+    }
+}
+/* quotes section codes end here */
+
+/* Footer codes start here */
+.footer{
+    padding-top: 32px;
+    padding-bottom: 16px;
+    color: #20484F;
+
+    address{
+        line-height: 135%;
+        letter-spacing: -1%;
+    }
+    h6{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 21px;
+    }
+    ul{
+        margin-bottom: 32px;
+
+        li{
+            margin-bottom: 21px;
+        }
+    }
+    .footer-devider{
+        border-color: #20484F;
+    }
+    .copyright-text{
+        font-size: 14px;
+    }
+}
+/* Footer codes end here */
+
+/* Mobile device responsive */
+@media only screen and (max-width: 768px){
+
+    /* Nabvbar codes start here */
+    .navbar-collapse {
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-bottom: 10px;
+    }
+    /* Navbar codes end here */
+
+    /* Hero codes start here */
+    .hero{
+        padding: 50px 0;
+        background-color: #FAFAFA;
+
+        h1{
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        .hero-image-content{
+            margin-top: 30px;
+        }
+    }
+    /* Hero codes end here */
+
+    /* Partners codes start here */
+    .partners{
+        h2{
+            font-size: 18px;
+            .strong{
+                font-weight: 700;
+            }
+        }
+        .partners-logos{
+            flex-wrap: wrap;
+            gap: 20px;
+
+            img{
+                width: 80px;
+            }
+        }
+    }
+    /* Partners codes end here */
+
+    /* Percentige codes start here */
+    .percentige{
+        padding: 40px 0;
+
+        .devider{
+            border: 1px solid #072125;
+        }
+        .percentige-cards-block{
+            h3{
+                font-size: 44px;
+            }
+        }
+    }
+    /* Percentige codes end here */
+
+    /* Timeline codes start here */
+    .timeline{
+        display: none;
+        position: relative;
+
+        .timeline-decore-image{
+            position: absolute;
+            left: 50%;
+            top: 245px;
+            transform: translateX(-50%);
+            height: 2900px;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        .timeline-section-top{
+            padding: 106px 0;
+            color: #2D3142;
+            background-color: #fff;
+            background: url(../images/timeline-top-decore.png) no-repeat right, url(../images/timeline-top-decore.png) no-repeat left;
+
+            p{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 64px;
+                line-height: 120%;
+                font-weight: 700;
+            }
+        }
+        .timeline-section-content{
+            background-color: #FAFAFA;
+
+            .timeline-text-block{
+                height: 450px;
+
+                h3{
+                    font-size: 32px;
+                    font-weight: 800;
+                    line-height: 130%;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color: #787A80;
+                    margin-bottom: 25px;
+                }
+            }
+            .timeline-text-block-last{
+                height: 250px;
+            }
+        }
+    }
+
+    /* quotes section codes start here */
+    .quotes{
+        padding: 40px 0;
+        background-color: #FAFAFA;
+
+        h2{
+            font-size: 28px;
+        }
+        .card{
+            padding: 20px 16px;
+
+            .card-body{
+                img{
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 24px;
+                    line-height: 150%;
+                }
+            }
+            .quote-card-bottom{
+                margin-top: 25px;
+                h6{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                span{
+                    font-size: 14px;
+                    color: #20484F;
+                }
+            }
+        }
+    }
+    /* quotes section codes end here */
+
+    /* Footer codes start here */
+    .footer{
+        h6{
+            margin-bottom: 12px;
+        }
+        ul{
+
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    /* Footer codes end here */
+
+}
+/* Mobile device responsive end*/
