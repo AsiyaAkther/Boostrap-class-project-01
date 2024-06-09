@@ -190,6 +190,17 @@ a{
         }
         .timeline-text-block-last{
             height: 250px;
+
+            h3{
+                font-size: 32px;
+                font-weight: 800;
+                line-height: 130%;
+                margin-bottom: 15px;
+            }
+            p{
+                color: #787A80;
+                margin-bottom: 25px;
+            }
         }
     }
 }
@@ -208,6 +219,7 @@ a{
     .card{
         padding: 33px 36px;
         .card-body{
+            padding: 0;
             img{
                 margin-bottom: 20px;
             }
@@ -264,11 +276,132 @@ a{
 
 /* Mobile device responsive */
 @media only screen and (max-width: 768px){
+    .navbar-collapse {
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-bottom: 10px;
+    }
+
+    .hero{
+        padding: 50px 0;
+        background-color: #FAFAFA;
+
+        h1{
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        .hero-image-content{
+            margin-top: 30px;
+        }
+    }
+
+    .partners{
+        h2{
+            font-size: 18px;
+            .strong{
+                font-weight: 700;
+            }
+        }
+        .partners-logos{
+            flex-wrap: wrap;
+            gap: 20px;
+
+            img{
+                width: 80px;
+            }
+        }
+    }
+
+    .percentige{
+        padding: 40px 0;
+
+        .devider{
+            border: 1px solid #072125;
+        }
+        .percentige-cards-block{
+            h3{
+                font-size: 44px;
+            }
+        }
+    }
+
+    .timeline{
+        .timeline-decore-image{
+            display: none;
+        }
+
+        .timeline-section-top{
+            padding: 50px 0;
+            background: none;
+
+            h2{
+                font-size: 36px;
+            }
+        }
+        .timeline-section-content{
+
+            .timeline-text-block{
+                height: auto;
+                padding: 40px 0;
+
+                h3{
+                    font-size: 28px;
+                }
+            }
+            .timeline-text-block-last{
+                height: auto;
+                padding: 40px 0;
+
+                h3{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .quotes{
+        padding: 40px 0;
+        background-color: #FAFAFA;
+
+        h2{
+            font-size: 28px;
+        }
+        .quotes-cards-block{
+            margin-top: 30px;
+        }
+        .card{
+            padding: 20px 16px;
+        }
+    }
+
+    .footer{
+        h6{
+            margin-bottom: 12px;
+        }
+        ul{
+
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+/* Mobile device responsive end*/
+
+/* tablet device responsive */
+@media (min-width: 768px) and (max-width: 991px){
 
     /* Nabvbar codes start here */
     .navbar-collapse {
         align-items: center;
-        text-align: center;
+        text-align: left;
         padding: 20px 0;
     }
     .navbar-nav .nav-item .nav-link {
@@ -290,7 +423,7 @@ a{
         }
 
         .hero-image-content{
-            margin-top: 30px;
+            margin-top: -20px;
         }
     }
     /* Hero codes end here */
@@ -304,11 +437,10 @@ a{
             }
         }
         .partners-logos{
-            flex-wrap: wrap;
             gap: 20px;
 
             img{
-                width: 80px;
+                width: 100px;
             }
         }
     }
@@ -321,67 +453,41 @@ a{
         .devider{
             border: 1px solid #072125;
         }
-        .percentige-cards-block{
-            h3{
-                font-size: 44px;
-            }
-        }
     }
     /* Percentige codes end here */
 
     /* Timeline codes start here */
     .timeline{
-        display: none;
-        position: relative;
-
-        .timeline-decore-image{
-            position: absolute;
-            left: 50%;
-            top: 245px;
-            transform: translateX(-50%);
-            height: 2900px;
-            overflow: hidden;
-
-            img{
-                height: 100%;
-            }
+        .timeline-decore-image {
+            top: 155px;
+            height: 1600px;
         }
 
         .timeline-section-top{
-            padding: 106px 0;
-            color: #2D3142;
-            background-color: #fff;
-            background: url(../images/timeline-top-decore.png) no-repeat right, url(../images/timeline-top-decore.png) no-repeat left;
+            padding: 50px 0;
+            background: none;
 
-            p{
-                font-size: 18px;
-                font-weight: 700;
-            }
             h2{
-                font-size: 64px;
-                line-height: 120%;
-                font-weight: 700;
+                font-size: 46px;
             }
         }
         .timeline-section-content{
-            background-color: #FAFAFA;
 
             .timeline-text-block{
-                height: 450px;
+                height: auto;
+                padding: 40px 0;
 
                 h3{
-                    font-size: 32px;
-                    font-weight: 800;
-                    line-height: 130%;
-                    margin-bottom: 15px;
-                }
-                p{
-                    color: #787A80;
-                    margin-bottom: 25px;
+                    font-size: 28px;
                 }
             }
             .timeline-text-block-last{
-                height: 250px;
+                height: auto;
+                padding: 40px 0;
+
+                h3{
+                    font-size: 28px;
+                }
             }
         }
     }
@@ -394,27 +500,14 @@ a{
         h2{
             font-size: 28px;
         }
+        .quotes-cards-block{
+            margin-top: 30px;
+        }
         .card{
-            padding: 20px 16px;
-
+            padding: 20px 10px;
             .card-body{
-                img{
-                    margin-bottom: 20px;
-                }
                 p{
-                    font-size: 24px;
-                    line-height: 150%;
-                }
-            }
-            .quote-card-bottom{
-                margin-top: 25px;
-                h6{
                     font-size: 18px;
-                    font-weight: 700;
-                }
-                span{
-                    font-size: 14px;
-                    color: #20484F;
                 }
             }
         }
@@ -436,4 +529,27 @@ a{
     /* Footer codes end here */
 
 }
-/* Mobile device responsive end*/
+/* Tablet device responsive end*/
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .partners {
+        .partners-logos {
+            gap: 50px;
+        }
+    }
+    .hero {
+        padding: 117px 30px;
+
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .timeline {
+        .timeline-decore-image {
+            height: 2500px;
+        }
+    }
+}
